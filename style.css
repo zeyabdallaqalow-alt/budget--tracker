@@ -1,26 +1,86 @@
 body {
-    font-family: Ariel, sens-serif;
+    font-family: Arial, sans-serif;
     margin: 30px;
 }
 
-h1{
-    text-align:center;
+h1 {
+    text-align: center;
 }
 
-#add-expenses {
+header {
+    text-align: center;
+}
+
+.add-expense-section {
     background-color: lightblue;
     padding: 20px;
     margin-top: 20px;
 }
 
-.expenses {
-    background-color:lightgray;
-    padding: 20px;
-
+/* Direct child selector */
+.add-expense-section > form {
+    padding: 10px;
 }
 
-input{
+/* Descendant selector */
+.expenses-section td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgreen;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: lightyellow;
+}
+
+/* Negation selector */
+input:not([type="submit"]) {
+    margin-bottom: 10px;
+}
+
+/* Focus selector */
+input:focus {
+    border: 2px solid blue;
+}
+
+input,
+select {
     display: block;
     margin-bottom: 15px;
-    padding: 8px
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+details {
+    margin-top: 20px;
+}
+
+iframe {
+    margin-top: 20px;
 }
