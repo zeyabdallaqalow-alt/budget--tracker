@@ -1,109 +1,85 @@
-Budget Tracker
-Project Description
+# Budget Tracker
+
+## Project Description
 
 This is a Budget Tracker website built using HTML and CSS.
 
 The project allows users to view sample expenses and provides a form for entering new expenses.
 
-Features
-Expense Table
+## Features
+
+### 1. Expense Table
 
 The project contains an HTML table with:
 
-Name
-
-Amount
-
-Category
-
-Date
+- Name
+- Amount
+- Category
+- Date
 
 The table contains five sample expenses.
 
-It uses:
+The table uses:
+- <table>
+- <thead>
+- <tbody>
+- <tr>
+- <th>
+- <td>
 
-<table>
+The CSS adds borders, padding, a colored header, alternating row colors, and a hover effect.
 
-<thead>
+### 2. Add Expense Form
 
-<tbody>
+The form allows users to enter:
 
-<tr>
+- Expense name
+- Amount
+- Category
+- Date
 
-<th>
+The category uses a dropdown with five options:
 
-<td>
+- Food
+- Transport
+- Rent
+- Entertainment
+- Other
 
-The table also has borders, padding, a colored header, alternating row colors, and a hover effect.
+The form also contains an Add Expense button.
 
-Add Expense Form
+### 3. Multimedia
 
-The form contains:
+The page includes a budget tracker logo using an <img> element.
 
-Expense Name
+It also includes a YouTube budgeting video using an <iframe>.
 
-Amount
+### 4. Interactive Elements
 
-Category
+The page includes a collapsible section using <details> and <summary>.
 
-Date
+Table rows change appearance when the mouse moves over them.
 
-Add Expense button
+The Add Expense button uses a pointer cursor.
 
-The category dropdown contains:
+### 5. CSS Selectors
 
-Food
+The stylesheet uses advanced CSS selectors including:
 
-Transport
+- Descendant selector
+- Direct child selector
+- :nth-child() selector
+- :not() selector
+- :focus selector
+- :hover selector
 
-Rent
+## Files
 
-Entertainment
+### index.html
+Contains the structure and content of the Budget Tracker webpage.
 
-Other
+### style.css
+Contains the styling, table design, form styling, hover effects, and advanced CSS selectors.
 
-Every form control has a unique ID.
-
-Multimedia
-
-A budget tracker icon has been added using an <img> element.
-
-A budgeting video has been embedded using an <iframe>.
-
-Interactive Elements
-
-The project contains a collapsible "How to use this tracker" section using:
-
-<details>
-
-<summary>
-
-The table rows also change color when the mouse moves over them.
-
-The Add Expense button uses cursor: pointer.
-
-Advanced CSS Selectors
-
-The project uses several advanced CSS selectors:
-
-.expenses-section td — descendant selector
-
-tr:nth-child(even) — position-based pseudo-class
-
-input:not([type="submit"]) — negation pseudo-class
-
-input:focus — focus pseudo-class
-
-Technologies
-
-HTML5
-
-CSS3
-
-How to Run
-
-Open the index.html file in a web browser.
-
-Future Improvements
-
-JavaScript can later be added to make the Add Expense button functional and allow users to add and manage expenses dynamically.
+### README.md
+Explains the project and describes what each file does.
